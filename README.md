@@ -43,3 +43,33 @@ Objectives:
 #### Expected Outcome
 
 By the end of the project, we expect to have a working demo of a personalized research paper browsing experience. Users will be able to interact with newly published papers, receive meaningful recommendations, and have a record of their reading history. The project will demonstrate the value of UI/UX design in building efficient tools for researchers and how machine learning can enhance personalized discovery.
+
+#### ✨ Features
+
+- **Daily ArXiv Syncing**: Automatically fetches the latest ML-related papers from arXiv.
+- **Personalized Recommendations**: Learns from user feedback (likes, views) to suggest relevant unread papers.
+- **GPT-4o Paper Summarization**: Summarizes paper content (e.g., abstract + intro) to help users quickly assess relevance.
+- **Read History Tracking**: Separates read vs. unread papers for better paper management.
+- **User Feedback System**: Allows thumbs up/down or rating interactions to fine-tune future recommendations.
+- **Clean and Simple UI**: Intuitive interface with desktop and mobile-friendly layouts.
+
+#### 🗓️ Timeline
+
+| Week | Milestone |
+|------|-----------|
+| Week 1 | Project planning, wireframes, and tech stack decisions |
+| Week 2 | ArXiv scraping + initial UI prototype |
+| Week 3 | User preference tracking + basic recommendation system |
+| Week 4 | GPT-4o summarization integration |
+| Week 5 | Read history & interaction feedback features |
+| Week 6 | Polish UI, finalize features, and conduct user testing |
+| Week 7 | Prepare final presentation, documentation, and demo video |
+
+#### 📬 Contact Information
+
+**Lead Developer & Designer:** Zeyi Chen 
+**Email:** zc096373@gmail.com  
+**GitHub:** [github.com/babu111](https://github.com/babu111)  
+**Client Contact:** Kyle Kim
+
+---
