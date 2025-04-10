@@ -68,7 +68,7 @@ By the end of the project, we expect to have a working demo of a personalized re
 ### Contact Information
 
 - **Lead Developer & Designer:** Zeyi Chen 
-- **Email:** zc096373@gmail.com
+- **Email:** zeyi19@uw.edu
 - **GitHub:** [github.com/babu111](https://github.com/babu111)  
 - **Client Contact:** Kyle Kim
 
