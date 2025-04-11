@@ -1,91 +1,75 @@
-# arXiv Paper Recommender
+## ArXiv Paper Recommender App – Project Proposal
 
-A web application that recommends arXiv papers based on your interests and reading history. The application scrapes daily papers from arXiv and uses a collaborative filtering algorithm to provide personalized recommendations.
+#### Project Objectives
 
-## Features
+The goal of this project is to design and prototype a personalized academic paper recommender system that fetches and displays daily new machine learning papers from arXiv.org. The app will focus on helping users discover relevant research efficiently by learning from their preferences. The system will prioritize unread papers that are most likely to be of interest and organize the user’s previously read papers in a separate, easily accessible section. Automatic paper summarization will be implemented using a LLM API such as GPT-4o.
 
-- Daily arXiv paper scraping (focusing on machine learning papers)
-- User authentication
-- Personalized paper recommendations
-- Paper rating system
-- Reading history tracking
-- Modern and responsive UI
+Objectives:
+- Implement a pipeline to automatically fetch and display newly published machine learning papers from arXiv daily.
+- Design and build an interactive user interface for browsing, reading, and rating papers.
+- Develop a personalized recommendation algorithm that improves over time based on user interactions (likes, clicks, reads).
+- Create a clear and user-friendly separation between "Unread Recommended Papers" and "Previously Read Papers."
+- Integrate a paper summarization feature powered by GPT-4o to generate short, digestible summaries of each paper.
 
-## Tech Stack
+#### Target Users and Their Needs
 
-### Backend
-- Python
-- FastAPI
-- SQLAlchemy
-- scikit-learn
-- arXiv API
+**Target Users:**
+- Machine learning researchers, graduate students, and practitioners who regularly read academic papers.
 
-### Frontend
-- React
-- TypeScript
-- Material-UI
-- Axios
+**User Needs:**
+- A fast and easy way to keep up with newly published ML papers.
+- Personalized recommendations to avoid overwhelming lists of irrelevant content.
+- A simple interface to track papers they’ve already read.
+- The ability to give feedback (e.g., thumbs up/down) to improve future recommendations.
 
-## Setup
+#### Key Deliverables
 
-### Backend Setup
+- A functional prototype of the arXiv recommender app with:
+  - Daily scraping of ML-related papers from arXiv.
+  - Paper listing and detail views.
+  - User login and preference tracking.
+  - Recommendation algorithm that adapts based on user input.
+- UI/UX designs for the app.
+- A final presentation and demo video showing the system in use.
+- Project report including technical details.
 
-1. Navigate to the backend directory:
-```bash
-cd backend
-```
+#### Special Constraints
 
-2. Create a virtual environment and activate it:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+- **Rate Limiting & API Use**: Must comply with arXiv’s API usage terms to avoid excessive load on their servers.
+- **Privacy**: If storing any user data (e.g., preferences, read history), basic user privacy must be respected.
+- **Scalability**: The prototype should be designed to support potential scaling, though full scalability is not required at this stage.
+- **No Full Authentication System**: For this class prototype, user tracking may be session-based or limited to avoid complex backend implementation.
 
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+#### Expected Outcome
 
-4. Run the backend server:
-```bash
-uvicorn app.main:app --reload
-```
+By the end of the project, we expect to have a working demo of a personalized research paper browsing experience. Users will be able to interact with newly published papers, receive meaningful recommendations, and have a record of their reading history. The project will demonstrate the value of UI/UX design in building efficient tools for researchers and how machine learning can enhance personalized discovery.
 
-The backend server will start at http://localhost:8000
+### Features
 
-### Frontend Setup
+- **Daily ArXiv Syncing**: Automatically fetches the latest ML-related papers from arXiv.
+- **Personalized Recommendations**: Learns from user feedback (likes, views) to suggest relevant unread papers.
+- **GPT-4o Paper Summarization**: Summarizes paper content (e.g., abstract + intro) to help users quickly assess relevance.
+- **Read History Tracking**: Separates read vs. unread papers for better paper management.
+- **User Feedback System**: Allows thumbs up/down or rating interactions to fine-tune future recommendations.
+- **Clean and Simple UI**: Intuitive interface with desktop and mobile-friendly layouts.
 
-1. Navigate to the frontend directory:
-```bash
-cd frontend
-```
+### Timeline
 
-2. Install dependencies:
-```bash
-npm install
-```
+| Week | Milestone |
+|------|-----------|
+| Week 1 | Project planning, wireframes, and tech stack decisions |
+| Week 2 | ArXiv scraping + initial UI prototype |
+| Week 3 | User preference tracking + basic recommendation system |
+| Week 4 | GPT-4o summarization integration |
+| Week 5 | Read history & interaction feedback features |
+| Week 6 | Polish UI, finalize features, and conduct user testing |
+| Week 7 | Prepare final presentation, documentation, and demo video |
 
-3. Start the development server:
-```bash
-npm start
-```
+### Contact Information
 
-The frontend application will start at http://localhost:3000
+- **Lead Developer & Designer:** Zeyi Chen 
+- **Email:** zeyi19@uw.edu
+- **GitHub:** [github.com/babu111](https://github.com/babu111)  
+- **Client Contact:** Kyle Kim
 
-## Usage
-
-1. Register a new account or log in with existing credentials
-2. Browse through recommended papers on the home page
-3. Rate papers to improve recommendations
-4. Click "Fetch Daily Papers" to get the latest papers from arXiv
-5. View paper PDFs by clicking the "View PDF" button
-
-## API Documentation
-
-Once the backend server is running, you can access the API documentation at:
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
-
-## Contributing
-
-Feel free to submit issues and enhancement requests!
+---
