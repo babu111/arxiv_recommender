@@ -11,4 +11,4 @@ python-jose==3.3.0
 passlib==1.7.4
 python-multipart==0.0.6
 bcrypt==4.0.1 
-Rust >=1.56.0
+# Rust >=1.56.0

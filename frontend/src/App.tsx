@@ -17,7 +17,8 @@ const theme = createTheme({
 });
 
 const App: React.FC = () => {
-  const isAuthenticated = !!localStorage.getItem('token');
+  // Bypass authentication check - always return true for development
+  const isAuthenticated = true; // Temporarily disabled auth check
 
   return (
     <ThemeProvider theme={theme}>
@@ -26,15 +27,17 @@ const App: React.FC = () => {
         <Routes>
           <Route
             path="/"
-            element={
-              isAuthenticated ? <Home /> : <Navigate to="/login" replace />
-            }
+            // element={
+            //   isAuthenticated ? <Home /> : <Navigate to="/login" replace />
+            // }
+            element={<Home />}
           />
           <Route
             path="/login"
-            element={
-              !isAuthenticated ? <Login /> : <Navigate to="/" replace />
-            }
+            // element={
+            //   !isAuthenticated ? <Login /> : <Navigate to="/" replace />
+            // }
+            element={<Navigate to="/" replace />}
           />
         </Routes>
       </Router>

@@ -10,12 +10,14 @@ const api = axios.create({
     },
 });
 
-// Add token to requests if it exists
+// Add mock token to all requests - for development only
 api.interceptors.request.use((config) => {
-    const token = localStorage.getItem('token');
-    if (token) {
-        config.headers.Authorization = `Bearer ${token}`;
-    }
+    // const token = localStorage.getItem('token');
+    // if (token) {
+    //     config.headers.Authorization = `Bearer ${token}`;
+    // }
+    // Add a mock token for development - bypassing authentication
+    config.headers.Authorization = `Bearer mock_development_token`;
     return config;
 });
 

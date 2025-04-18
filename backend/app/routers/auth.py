@@ -47,6 +47,16 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     return encoded_jwt
 
 async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
+    # Development bypass - accept mock token
+    if token == "mock_development_token":
+        # Return a mock user for development
+        return User(
+            id=1,
+            email="dev@example.com",
+            hashed_password="mock_hash",
+            is_active=True
+        )
+    
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Could not validate credentials",
