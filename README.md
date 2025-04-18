@@ -1,4 +1,71 @@
-## ArXiv Paper Recommender App – Project Proposal
+# ArXiv Paper Recommender App
+
+
+
+## Installation
+
+#### Backend Environment Setup
+
+   ```bash
+   cd /path/to/arxiv_recommender/backend
+   # creating pip virtual env
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   # Create initial database
+   # This will create the SQLite database when you first run the app
+   uvicorn app.main:app --reload
+   ```
+
+#### Frontend Environment Setup
+
+   ```bash
+   cd /path/to/arxiv_recommender/frontend
+   npm install
+   ```
+
+## Running the Application
+The script to run the application is `run.sh`. Here's a breakdown of its content.
+#### Start the Backend Server
+```bash
+cd /path/to/arxiv_recommender/backend
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+uvicorn app.main:app --reload
+```
+
+### Start the Frontend Development Server
+```bash
+cd /path/to/arxiv_recommender/frontend
+npm start
+```
+
+## Troubleshooting
+
+### Backend Issues
+- If you encounter database issues, try deleting the existing database file and restart the server:
+  ```bash
+  rm backend/arxiv_recommender.db
+  ```
+- Ensure port 8000 is not in use by another application.
+
+### Frontend Issues
+- Check that the API URL in `frontend/src/services/api.ts` points to the correct backend URL (default: `http://localhost:8000`).
+- Ensure port 3000 is not in use by another application.
+
+## When You Return to the Project
+Each time you want to work on the project, remember to activate the virtual environment for the backend:
+```bash
+cd /path/to/arxiv_recommender/backend
+source venv/bin/activate
+```
+
+The frontend doesn't require a virtual environment, just make sure Node.js is installed on your system.
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+# Project Proposal
 
 #### Project Objectives
 
