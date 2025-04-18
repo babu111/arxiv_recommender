@@ -4,6 +4,8 @@
 
 ## Installation
 
+This application is tested on macOS. No guarantee on Windows or Linux.
+
 #### Backend Environment Setup
 
    ```bash
@@ -29,7 +31,7 @@ The script to run the application is `run.sh`. Here's a breakdown of its content
 #### Start the Backend Server
 ```bash
 cd /path/to/arxiv_recommender/backend
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
 uvicorn app.main:app --reload
 ```
 
