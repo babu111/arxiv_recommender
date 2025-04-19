@@ -1,6 +1,6 @@
 # ArXiv Paper Recommender App
 
-## Progress
+## Progress 
 - 4.18.2025: Finished building the frontend tech stack using ReAct. The homepage is showing just fine. Plan to build the Arxiv api & recommendation system via python backend. Plan to also include a registration and login mechanism for users.
 
 ## Installation
