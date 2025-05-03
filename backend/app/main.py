@@ -2,7 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 import uvicorn
-from .database import engine, Base
+from .database import engine
+from .models import Base  # Import Base from models instead
 from .routers import papers, auth
 
 # Create database tables
