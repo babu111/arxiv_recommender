@@ -68,6 +68,12 @@ source venv/bin/activate
 The frontend doesn't require a virtual environment, just make sure Node.js is installed on your system.
 
 
+## Unit Test
+
+### Test 1
+
+A unit test for the FastAPI app's root endpoint (/). This test checks that a GET request to / returns a 200 status code and the expected welcome message. The test is located in `backend/tests/test_main.py`.
+
 
 -----------------------------------------------------------------------------------------------------
 
