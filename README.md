@@ -6,7 +6,7 @@
 
 ## Installation
 
-This application is tested on macOS. No guarantee on Windows or Linux.
+This application is tested on macOS. No guarantee on Windows or Linux. 
 
 #### Backend Environment Setup
 
