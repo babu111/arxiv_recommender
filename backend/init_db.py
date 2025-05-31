@@ -33,51 +33,6 @@ print("Added users")
 
 # Create sample papers
 sample_papers = [
-    {
-        "arxiv_id": "2201.00001",
-        "title": "Deep Learning for Natural Language Processing",
-        "authors": "John Smith, Jane Doe",
-        "abstract": "This paper presents an overview of deep learning techniques for natural language processing.",
-        "categories": "cs.CL, cs.AI",
-        "published_date": datetime(2022, 1, 1),
-        "pdf_url": "https://arxiv.org/pdf/2201.00001.pdf"
-    },
-    {
-        "arxiv_id": "2202.00002",
-        "title": "Transformer Models for Computer Vision",
-        "authors": "Alice Johnson, Bob Brown",
-        "abstract": "This paper explores the use of transformer models in computer vision tasks.",
-        "categories": "cs.CV, cs.AI",
-        "published_date": datetime(2022, 2, 1),
-        "pdf_url": "https://arxiv.org/pdf/2202.00002.pdf"
-    },
-    {
-        "arxiv_id": "2203.00003",
-        "title": "Reinforcement Learning in Robotics",
-        "authors": "Michael Wilson, Emily Davis",
-        "abstract": "This paper reviews the application of reinforcement learning in robotics.",
-        "categories": "cs.RO, cs.AI",
-        "published_date": datetime(2022, 3, 1),
-        "pdf_url": "https://arxiv.org/pdf/2203.00003.pdf"
-    },
-    {
-        "arxiv_id": "2204.00004",
-        "title": "Graph Neural Networks for Recommender Systems",
-        "authors": "David Lee, Sarah Chen",
-        "abstract": "This paper presents a new approach to recommender systems using graph neural networks.",
-        "categories": "cs.IR, cs.LG",
-        "published_date": datetime(2022, 4, 1),
-        "pdf_url": "https://arxiv.org/pdf/2204.00004.pdf"
-    },
-    {
-        "arxiv_id": "2205.00005",
-        "title": "Quantum Computing for Machine Learning",
-        "authors": "Robert Johnson, Maria Garcia",
-        "abstract": "This paper discusses the potential of quantum computing in machine learning applications.",
-        "categories": "quant-ph, cs.LG",
-        "published_date": datetime(2022, 5, 1),
-        "pdf_url": "https://arxiv.org/pdf/2205.00005.pdf"
-    }
 ]
 
 for paper_data in sample_papers:
