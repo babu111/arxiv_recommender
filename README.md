@@ -1,6 +1,7 @@
 # ArXiv Paper Recommender App
 
 ## Progress
+- 6.5.2025: The web app is deployed at https://arxivrecommender-atidvvey32o7zc4bsrrbbx.streamlit.app/
 - 5.30.2025: All features implemented. Beautified frontend.
 - 5.2.2025: Able to fetch papers from arXiv api. Showing a rating bar for users to submit rating. Clicking "View PDF" takes users to arXiv paper page. Wrote a unit test. Refer to unit test section of readme.
 - 4.18.2025: Finished building the frontend tech stack using ReAct. The homepage is showing just fine. Plan to build the Arxiv api & recommendation system via python backend. Plan to also include a registration and login mechanism for users.
