@@ -4,7 +4,8 @@ import pandas as pd
 from datetime import datetime
 
 # Configure API
-API_URL = "http://localhost:8000"
+# API_URL = "http://localhost:8000"
+API_URL = "https://arxiv-recommender.onrender.com"
 MOCK_TOKEN = "mock_development_token"
 HEADERS = {
     "Authorization": f"Bearer {MOCK_TOKEN}",
