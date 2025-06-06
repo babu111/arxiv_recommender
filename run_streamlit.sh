@@ -3,13 +3,18 @@
 cd /Users/zeyichen/Documents/研二spring/user_interface/arxiv_recommender
 # Navigate to backend
 cd backend
-
-# Activate virtual environment
-source venv/bin/activate || { echo "Failed to activate backend virtual environment"; exit 1; }
+if [ ! -d "venv" ]; then
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+else
+    # Activate virtual environment
+    source venv/bin/activate || { echo "Failed to activate backend virtual environment"; exit 1; }
+fi
 
 # Initialize the database
-echo "Initializing database with sample data..."
-python init_db.py || { echo "Failed to initialize database"; exit 1; }
+# echo "Initializing database with sample data..."
+# python init_db.py || { echo "Failed to initialize database"; exit 1; }
 
 # Start the backend server in the background
 echo "Starting FastAPI backend server..."
