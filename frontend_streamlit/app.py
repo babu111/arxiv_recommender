@@ -50,7 +50,7 @@ def rate_paper(paper_id, rating):
         
         if response.status_code == 200:
             st.success("🎉 Paper rated successfully!")
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error(f"❌ Failed to rate paper: {response.text}")
     except Exception as e:
